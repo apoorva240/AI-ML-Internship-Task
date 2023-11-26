@@ -47,5 +47,87 @@ Replace 'image_url' with the actual URL of an image you want to use:
 image_url = 'https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8='
 process_thermal_image(image_url)
 
+# Patient Data Encryption and Database
+
+## Overview
+
+This Python script demonstrates a simple implementation of patient data encryption and storage in a database. It utilizes the `cryptography` library to perform encryption and decryption using the Fernet symmetric key encryption scheme.
+
+## How It Works
+
+The code consists of two main classes:
+
+1. **PatientDataEncryption:**
+   - Initializes with a key (or generates a new one if not provided).
+   - Uses Fernet cipher for encryption and decryption.
+   - Provides methods to encrypt and decrypt patient data.
+
+2. **PatientDatabase:**
+   - Initializes an empty list to store patient data.
+   - Offers methods to add patients to the database and display the current patient records.
+
+## Example Usage
+
+1. **Encryption Module Initialization:**
+   - Creates an instance of the `PatientDataEncryption` class.
+
+2. **Patient Database Initialization:**
+   - Creates an instance of the `PatientDatabase` class.
+
+3. **Sample Patient Data:**
+   - Defines sample patient data in a dictionary format.
+
+4. **Data Encryption:**
+   - Encrypts patient data using the `PatientDataEncryption` instance.
+
+5. **Adding Encrypted Data to the Database:**
+   - Adds encrypted patient data to the database.
+
+6. **Displaying Encrypted Patient Data:**
+   - Displays the encrypted patient data stored in the database.
+
+7. **Data Decryption:**
+   - Decrypts the patient data using the `PatientDataEncryption` instance.
+
+8. **Displaying Decrypted Patient Data:**
+   - Prints the decrypted patient data.
+
+## How to Use
+
+1. Clone the repository.
+
+    ```bash
+    git clone https://github.com/your-username/patient-data-encryption.git
+    cd patient-data-encryption
+    ```
+
+2. Install dependencies.
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Run the script.
+
+    ```bash
+    python patient_data_encryption.py
+    ```
+
+4. View the encrypted and decrypted patient data in the console.
+
+## Dependencies
+
+- Python 3.x
+- cryptography library (`pip install cryptography`)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contributions
+
+Feel free to modify and enhance the code to suit your specific requirements. If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request. Thank you for using this patient data encryption and database example!
+
+
 
 
