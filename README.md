@@ -40,7 +40,9 @@ Processes a simulated thermal image from the specified URL.
 ## Example Usage
 
 ```python
-# Replace 'image_url' with the actual URL of an image you want to use
+
 image_url = 'https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8='
+process_thermal_image(image_url)
+
 process_thermal_image(image_url)
 
