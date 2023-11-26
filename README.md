@@ -28,29 +28,6 @@ Processes a simulated thermal image from the specified URL.
 5. **Thresholding:** Creates a binary image by thresholding the blurred image.
 6. **Contour Detection:** Finds contours in the binary image.
 7. **Contour Visualization:** Draws contours on the original image.
-   
-+------------------------+      +---------------------+      +----------------------+
-|                        |      |                     |      |                      |
-|    Start Processing    +----->+   Download Image   +----->+ Convert to Grayscale |
-|                        |      |                     |      |                      |
-+------------+-----------+      +----------+----------+      +------------+---------+
-             |                           |                               |
-             |                           |                               |
-             v                           v                               v
-+------------+-----------+      +----------+----------+      +------------+---------+
-|                        |      |                     |      |                      |
-| Simulate Thermal Image +----->+   Gaussian Blur    +----->+    Thresholding     |
-|                        |      |                     |      |                      |
-+------------+-----------+      +----------+----------+      +------------+---------+
-             |                           |                               |
-             |                           |                               |
-             v                           v                               v
-+------------+-----------+      +----------+----------+      +------------+---------+
-|                        |      |                     |      |                      |
-|    Display Images     +----->+  Contour Detection  +----->+ Contour Visualization |
-|                        |      |                     |      |                      |
-+------------------------+      +---------------------+      +----------------------+
-
 
 #### Displayed Images:
 - Original Image
